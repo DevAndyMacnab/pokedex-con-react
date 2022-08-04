@@ -1,0 +1,197 @@
+* {
+  margin: 0px;
+
+}
+
+nav {
+
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navbar-logo {
+  width: 200px;
+  position: absolute;
+  left: 790px;
+  top: 18px;
+
+}
+
+.navbar-react {
+  width: 100px;
+  position: absolute;
+  left: 1000px;
+  top: 15px;
+}
+.navbar-javascript{
+  width: 85px;
+  position: absolute;
+  left: 690px;
+  top: 15px;
+  
+}
+
+.searchbar-container {
+  display: flex;
+  height: 54px;
+  margin: 10px 70px;
+  padding: 0;
+  align-items: center;
+  flex: 1;
+  align-items: stretch;
+}
+
+.searchbar {
+  background: rgb(255, 255, 255);
+  padding-right: 20px;
+  flex: 1;
+
+}
+
+.searchbar input {
+  padding: 12px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+}
+
+.searchbar input:focus {
+  outline: none;
+}
+
+.searchbar-btn button {
+  background-color: black;
+  border: none;
+  border-radius: 10px;
+  height: 100%;
+  color: white;
+  padding: 10px 12px;
+  margin-left: 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.pokedex-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 18px;
+  padding: 0px 10px 20px 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .pokedex-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pokedex-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.pokemon-card {
+  display: flex;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
+
+.pokemon-img-container {
+  padding: 0px 5px;
+}
+
+.pokemon-img {
+  width: 100px;
+  height: 100px;
+}
+
+.pokemon-type {
+  display: flex;
+}
+
+.pokemon-type-text {
+  margin-right: 11px;
+  text-transform: capitalize;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 10px 10px 10px;
+  flex: 1;
+}
+
+.card-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-top h3 {
+  text-transform: capitalize;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.App {
+  font-family: sans-serif;
+
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+}
+
+.pagination-btn {
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  margin: 0px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.not-found-text {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 1.50rem;
+  padding: 30px;
+}
+
+footer {
+  font-family: sans-serif;
+  background-color: #000000;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
