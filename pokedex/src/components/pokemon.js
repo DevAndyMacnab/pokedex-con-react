@@ -7,7 +7,7 @@ const Pokemon = (props) => {
 
 
 
-
+//Tarjetas contenedoras de la informacion del pokemon
   return (
     <div className="pokemon-card">
       <div className="pokemon-img-container">

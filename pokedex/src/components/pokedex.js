@@ -27,7 +27,7 @@ const Pokedex = (props) => {
         />
       </div>
       {loading ? (
-        <div>ESPERE UN MOMENTO PORFAVOR...</div>
+        <div className="waitting">ESPERE UN MOMENTO PORFAVOR...</div>
       ) : (
         <div className="pokedex-grid">
           {pokemons.map((pokemon, idx) => {

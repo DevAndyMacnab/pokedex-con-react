@@ -71,7 +71,7 @@ export default function App() {
           <Searchbar onSearch={onSearch} />
           {notFound ? (
             <div className="not-found-text">
-              No se encontro el Pokemon que buscabas 
+              El Pokemon ingresado no se encuentra...
             </div>
           ) : (
             <Pokedex

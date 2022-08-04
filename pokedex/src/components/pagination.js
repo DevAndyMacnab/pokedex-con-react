@@ -3,7 +3,7 @@ import { LeftArrow, RightArrow } from "./direction";
 
 const Pagination = (props) => {
   const { onLeftClick, onRightClick, page, totalPages } = props;
-  console.log("MOSTRANDO ESTA WEA", props);
+  
 
   return (
     <div className="pagination">
