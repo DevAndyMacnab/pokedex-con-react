@@ -6,24 +6,11 @@ import Searchbar from './components/searchbar';
 import Pokedex from './components/pokedex';
 import {getPokemonData, getPokemons, searchPokemon} from "./api";
 import Footer from './components/footer';
-
-
-/*function App() {
-  return (
-    <div>
-      <Navbar/>
-      <div className="App">
-        <Searchbar/>
-      </div>
-    </div>
-    
-  );
-};
-
-export default App;*/
-
 const { useState, useEffect } = React;
 
+
+
+//Se encarga de actualizar las variables conforme se vayan modificando durante la ejecucion
 export default function App() {
   const [pokemons, setPokemons] = useState([]);
   const [page, setPage] = useState(0);
@@ -54,7 +41,7 @@ export default function App() {
   }, [page]);
 
   
-
+//Agrega la funcionalidad del Searchbar
   const onSearch = async (pokemon) => {
     if (!pokemon) {
       return fetchPokemons();
@@ -76,9 +63,8 @@ export default function App() {
     setSearching(false);
   };
 
-  //Imprmir 
+  //Mostrar la barra de navegacion, searchbar y el footer
   return (
-    
       <div>
         <Navbar />
         <div className="App">
